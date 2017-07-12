@@ -1,0 +1,789 @@
+{
+	"variables": [],
+	"info": {
+		"name": "watson",
+		"_postman_id": "305eeda7-aef2-84c2-b384-cf91735a5a47",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TextToSpeech",
+			"request": {
+				"url": {
+					"raw": "https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?accept=audio/wav&text=Hello%20world&voice=en-US_AllisonVoice",
+					"protocol": "https",
+					"host": [
+						"stream",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"text-to-speech",
+						"api",
+						"v1",
+						"synthesize"
+					],
+					"query": [
+						{
+							"key": "accept",
+							"value": "audio/wav",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "text",
+							"value": "Hello%20world",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "voice",
+							"value": "en-US_AllisonVoice",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_ptBR",
+			"request": {
+				"url": {
+					"raw": "https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?accept=audio/wav&text=Olá%20mundo, bom dia&voice=pt-BR_IsabelaVoice",
+					"protocol": "https",
+					"host": [
+						"stream",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"text-to-speech",
+						"api",
+						"v1",
+						"synthesize"
+					],
+					"query": [
+						{
+							"key": "accept",
+							"value": "audio/wav",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "text",
+							"value": "Olá%20mundo, bom dia",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "voice",
+							"value": "pt-BR_IsabelaVoice",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_ptBR",
+			"request": {
+				"url": {
+					"raw": "https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?accept=audio/wav&voice=pt-BR_IsabelaVoice",
+					"protocol": "https",
+					"host": [
+						"stream",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"text-to-speech",
+						"api",
+						"v1",
+						"synthesize"
+					],
+					"query": [
+						{
+							"key": "accept",
+							"value": "audio/wav",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "voice",
+							"value": "pt-BR_IsabelaVoice",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"Olá amiguinho\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_enUS",
+			"request": {
+				"url": {
+					"raw": "https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?accept=audio/wav&voice=en-US_AllisonVoice",
+					"protocol": "https",
+					"host": [
+						"stream",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"text-to-speech",
+						"api",
+						"v1",
+						"synthesize"
+					],
+					"query": [
+						{
+							"key": "accept",
+							"value": "audio/wav",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "voice",
+							"value": "en-US_AllisonVoice",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"Hello my friend\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_voices",
+			"request": {
+				"url": "https://stream.watsonplatform.net/text-to-speech/api/v1/voices",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"Hello my friend\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_Token",
+			"request": {
+				"url": "https://stream.watsonplatform.net/authorization/api/v1/token",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"Hello my friend\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_CreateCustomization",
+			"request": {
+				"url": "https://stream.watsonplatform.net/text-to-speech/api/v1/customizations",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"My\", \n\t\"language\":\"en-US\", \n\t\"description\":\"Customization Model Test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_GETCustomization",
+			"request": {
+				"url": "https://stream.watsonplatform.net/text-to-speech/api/v1/customizations",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Meu Modelo\", \n\t\"language\":\"pt-BR\", \n\t\"description\":\"Teste Modelo de Customização TTS\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_POSTWords",
+			"request": {
+				"url": "https://stream.watsonplatform.net/text-to-speech/api/v1/customizations/b6252353-b6e8-4fd3-9335-40f930407871/words\n",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"words\":[\r\n  {\"word\":\"Apple\", \"translation\":\"épou\"},\r\n  {\"word\":\"hardware\", \"translation\":\"rarduer\"},\r\n  {\"word\":\"hobit\", \"translation\":\"róbit\"},\r\n  {\"word\":\"mouse\", \"translation\":\"mause\"},\r\n  {\"word\":\"abacate\", \"translation\":\"<phoneme alphabet='ipa' ph='ɐ.bɐ.kˈa.tɨ'></phoneme>\"}\r\n  ]\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_GETWords",
+			"request": {
+				"url": "https://stream.watsonplatform.net/text-to-speech/api/v1/customizations/f54591e9-9a40-4e93-aada-de6ec7be43bb/words",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"words\":[\n  {\"word\":\"Apple\", \"translation\":\"épou\"},\n  {\"word\":\"hardware\", \"translation\":\"rarduer\"},\n  {\"word\":\"hobit\", \"translation\":\"róbit\"},\n  {\"word\":\"mouse\", \"translation\":\"mause\"}\n  ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech_DELWord",
+			"request": {
+				"url": "https://stream.watsonplatform.net/text-to-speech/api/v1/customizations/f54591e9-9a40-4e93-aada-de6ec7be43bb/words/mouse",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"words\":[\n  {\"word\":\"Apple\", \"translation\":\"épou\"},\n  {\"word\":\"hardware\", \"translation\":\"rarduer\"},\n  {\"word\":\"hobit\", \"translation\":\"róbit\"},\n  {\"word\":\"mouse\", \"translation\":\"mause\"}\n  ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Conversation_message",
+			"request": {
+				"url": {
+					"raw": "https://gateway.watsonplatform.net/conversation/api/v1/workspaces/ 08ccacd6-42fb-47f0-aa23-cd6583382e02/message?version=2017-05-26",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"conversation",
+						"api",
+						"v1",
+						"workspaces",
+						" 08ccacd6-42fb-47f0-aa23-cd6583382e02",
+						"message"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "2017-05-26\n",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"input\":{\"text\": \"Qual é a previsão do tempo?\"}\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_Recognize",
+			"request": {
+				"url": {
+					"raw": "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=pt-BR_BroadbandModel",
+					"protocol": "https",
+					"host": [
+						"stream",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"speech-to-text",
+						"api",
+						"v1",
+						"recognize"
+					],
+					"query": [
+						{
+							"key": "model",
+							"value": "pt-BR_BroadbandModel",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NTFlMzFjZTgtYWM4NC00NTU0LWIwZGItNThlODVkMzBmM2QxOmRFTE9Xak5ZeEdjYw==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_Session",
+			"request": {
+				"url": {
+					"raw": "https://stream.watsonplatform.net/speech-to-text/api/v1/session?model=pt-BR_BroadbandModel",
+					"protocol": "https",
+					"host": [
+						"stream",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"speech-to-text",
+						"api",
+						"v1",
+						"session"
+					],
+					"query": [
+						{
+							"key": "model",
+							"value": "pt-BR_BroadbandModel",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "audio/wav",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": ""
+					}
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_Token",
+			"request": {
+				"url": {
+					"raw": "https://stream.watsonplatform.net/authorization/api/v1/token?url=https://stream.watsonplatform.net/speech-to-text/api",
+					"protocol": "https",
+					"host": [
+						"stream",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"authorization",
+						"api",
+						"v1",
+						"token"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://stream.watsonplatform.net/speech-to-text/api",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "audio/wav",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": ""
+					}
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_Customizations",
+			"request": {
+				"url": "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Example model\",\n  \"base_model_name\": \"en-US_BroadbandModel\",\n  \"description\": \"Example custom language model\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_GETCustomizations",
+			"request": {
+				"url": "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Example model\",\n  \"base_model_name\": \"en-US_BroadbandModel\",\n  \"description\": \"Example custom language model\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_POSTCorpora",
+			"request": {
+				"url": "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Example model\",\n  \"base_model_name\": \"en-US_BroadbandModel\",\n  \"description\": \"Example custom language model\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_GETCorpus",
+			"request": {
+				"url": "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/d5ff36e0-65dd-11e7-85f6-435b156592c7/corpora/test",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Hi\nhey\nHow are you"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_PUTCorpus",
+			"request": {
+				"url": {
+					"raw": "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/d5ff36e0-65dd-11e7-85f6-435b156592c7/corpora/test?allow_overwrite=true",
+					"protocol": "https",
+					"host": [
+						"stream",
+						"watsonplatform",
+						"net"
+					],
+					"path": [
+						"speech-to-text",
+						"api",
+						"v1",
+						"customizations",
+						"d5ff36e0-65dd-11e7-85f6-435b156592c7",
+						"corpora",
+						"test"
+					],
+					"query": [
+						{
+							"key": "allow_overwrite",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Hi\nhey\nHow are you\nLeandro\nRafael\nFlaviano\npessego"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_GETwords",
+			"request": {
+				"url": "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/d5ff36e0-65dd-11e7-85f6-435b156592c7/words",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Hi\nhey\nHow are you"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SpeechToText_train",
+			"request": {
+				"url": "POST /v1/customizations/{customization_id}/train",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic N2ViZGZkNWEtNjMzMy00MzFjLTlhYmYtMjZhODRkZmUwZmY1OkJ6TkE2WjNaY3gzSQ==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Hi\nhey\nHow are you\nLeandro\nRafael\nFlaviano\npessego"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
